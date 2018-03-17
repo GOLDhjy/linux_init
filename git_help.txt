@@ -1,0 +1,38 @@
+sudo apt-get install git
+
+//create repository
+mkdir <your repositiry name>
+cd <your repositiry name>
+pwd
+
+//creating
+git init
+
+//watch .git
+ls -ah
+
+//writing a file
+gedit/vim test.txt
+
+//add file
+git add test.txt
+
+//commit(you can add lots of file ,then commit)
+git commit -m "your redeme"
+
+//add ssh keyto your github
+ssh-keygen -t rsa -C "youremail@example.com" // add ssh key
+(then,your copy your file(id_rsa.pub) to your SSHand GPCkeys of setting)(tgis file is hidden)
+
+//add oringin repository(guthub.com) you must have a repository on github
+git remote add origin git@github.com:<your github name>/<your github repository>.git
+git remote add origin git@github.com:GOLDhjy/linux_init.git
+git push -u oringin master
+
+//clone from oringin repository
+git clone git@github.com:<your github name> / <your github repository>.git
+git clone git@github.com:GOLDhjy/linux_init.git
+
+
+
+
