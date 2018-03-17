@@ -24,15 +24,35 @@ git commit -m "your redeme"
 ssh-keygen -t rsa -C "youremail@example.com" // add ssh key
 (then,your copy your file(id_rsa.pub) to your SSHand GPCkeys of setting)(tgis file is hidden)
 
-//add oringin repository(guthub.com) you must have a repository on github
+//add origin repository(guthub.com) you must have a repository on github
 git remote add origin git@github.com:<your github name>/<your github repository>.git
 git remote add origin git@github.com:GOLDhjy/linux_init.git
 git push -u oringin master
 
-//clone from oringin repository
+//clone from origin repository
 git clone git@github.com:<your github name> / <your github repository>.git
 git clone git@github.com:GOLDhjy/linux_init.git
 
+//delete file
+git rm <filename>
+git commit -m "explain"
 
+//recovery 
+git checkout -- filename
 
+//view state
+git status
 
+//View the modified content
+git diff
+
+//view log
+git log
+
+//Rollback version(^ of number representative number of rollback)
+git reset --hard HEAD^
+git reset --hard HEAD^^
+git reset --hard <commit number> //the number appear in git log
+
+//view your history command
+git reflog
