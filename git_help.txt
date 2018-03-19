@@ -56,3 +56,7 @@ git reset --hard <commit number> //the number appear in git log
 
 //view your history command
 git reflog
+
+//add origin master to local master
+git branch --set-upstream-to=origin/master
+
