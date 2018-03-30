@@ -27,7 +27,9 @@ ssh-keygen -t rsa -C "youremail@example.com" // add ssh key
 //add origin repository(guthub.com) you must have a repository on github
 git remote add origin git@github.com:<your github name>/<your github repository>.git
 git remote add origin git@github.com:GOLDhjy/linux_init.git
-git push -u oringin master
+git push -u origin master
+
+//update from github repository
 
 //clone from origin repository
 git clone git@github.com:<your github name> / <your github repository>.git
