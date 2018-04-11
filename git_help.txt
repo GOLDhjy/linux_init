@@ -62,3 +62,41 @@ git reflog
 //add origin master to local master
 git branch --set-upstream-to=origin/master
 
+//create branch and switch.dev is your name of branch
+git checkout -b dev=
+(git branch dev
+git checkout dev)
+
+//view this->branch
+git branch
+
+//merge branch
+git merge dev
+
+//delete branch
+git branch -d dev
+
+//connect branch
+git branch --set-upstream dev origin/dev
+git pull
+
+ //view remote
+git remote
+git remote -v
+
+//push to branch
+git push origin dev
+master分支是主分支，因此要时刻与远程同步；
+
+dev分支是开发分支，团队所有成员都需要在上面工作，所以也需要与远程同步；
+
+bug分支只用于在本地修复bug，就没必要推到远程了，除非老板要看看你每周到底修复了几个bug；
+
+feature分支是否推到远程，取决于你是否和你的小伙伴合作在上面开发。
+
+总之，就是在Git中，分支完全可以在本地自己藏着玩，是否推送，视你的心情而定！
+
+
+//create remote branch to local
+git checkout -b dev origin/dev
+
